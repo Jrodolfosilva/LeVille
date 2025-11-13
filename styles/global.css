@@ -515,3 +515,43 @@ a{
     height: 64px;
     width: auto;
 }
+
+
+
+
+/*LOCALIZACAO*/
+
+
+/*DIFERENCIAIS*/
+#mapa{
+    padding: 90px 0px;
+    padding-bottom: 0;
+    background-color:var(--color-azul);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 90px;
+}
+
+#mapa  .wrapper h2{
+    font-weight: 300;
+    color: var(--color-laranja);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#mapa  .wrapper p{
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+#mapa .mapa-localizacao{
+    width: 100%;
+}
