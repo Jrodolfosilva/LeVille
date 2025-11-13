@@ -1,0 +1,393 @@
+    
+    
+    .carrossel-lazer{
+        position: relative;
+        padding: 0 60px;
+    }
+    
+    
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+
+
+     .lazerSwiper {
+      height: 600px;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .lazerSwiperThumbs {
+      height: 80%;
+      width: 100%;
+      margin-top: 20px;
+
+     
+    }
+
+   
+
+    .lazerSwiperThumbs .swiper-slide {
+      width: 25%;
+      height: 120px;
+      opacity: 0.4;
+    }
+
+
+
+    .lazerSwiperThumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+    /* Estilização para os novos botões das miniaturas */
+.swiper-button-next-thumbs,
+.swiper-button-prev-thumbs {
+    position: absolute;
+    top: 100%;
+    width: 27px;
+    height: 44px;
+    margin-top: -90px;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-marron);
+}
+
+/* Posicionamento específico para os botões */
+.swiper-button-prev-thumbs {
+    left: -60px; 
+    right: auto;
+}
+
+.swiper-button-next-thumbs {
+    right: -60px; 
+    left: auto;
+}
+
+.swiper-button-prev-thumbs:after {
+    content: 'prev'; 
+    font-family: swiper-icons; 
+    font-size: 27px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.swiper-button-next-thumbs:after {
+    content: 'next'; 
+    font-family: swiper-icons;
+    font-size: 27px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+
+
+
+
+
+#plantas .swiperPlantas {
+  height: auto;
+  overflow: hidden;
+}
+
+.carrossel-plantas {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Imagem principal */
+#plantas .swiperPlantas .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Miniaturas */
+#plantas .swiperPlantasThumbs {
+  width: 100%;
+  height: fit-content;
+}
+
+#plantas .swiperPlantasThumbs .swiper-slide {
+  width: auto;
+  height: fit-content;
+  background: transparent;
+  text-align: center;
+}
+
+.step-planta {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid var(--color-laranja);
+  color: var(--color-laranja);
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: 600;
+  white-space: nowrap; 
+}
+
+.step-planta:hover {
+  background-color: var(--color-laranja);
+  color: var(--color-azul);
+}
+
+/* Estado ativo da miniatura */
+#plantas .swiperPlantasThumbs .swiper-slide-thumb-active .step-planta {
+  background-color: var(--color-laranja);
+  color: var(--color-azul);
+  border-color: var(--color-laranja);
+}
+
+/* ======================
+   NAVEGAÇÃO (SETA)
+====================== */
+#plantas .swiper-button-next-plantas,
+#plantas .swiper-button-prev-plantas {
+  position: absolute;
+  top: 100%;
+  width: 44px;
+  height: 44px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-size: 40px; /* controla o tamanho */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Lado esquerdo e direito */
+#plantas .swiper-button-prev-plantas {
+  left: 40%;
+  background-image: url('/images/seta-esquerda.png');
+}
+
+#plantas .swiper-button-next-plantas {
+  right: 40%;
+  background-image: url('/images/seta-direita.png');
+}
+
+/* Remove pseudo-elementos antigos */
+#plantas .swiper-button-prev-plantas::after,
+#plantas .swiper-button-next-plantas::after {
+  content: none;
+}
+
+
+
+
+#plantas .swiper-button-disabled{
+  opacity: 0.4;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #plantas .swiper-button-next-plantas,
+  #plantas .swiper-button-prev-plantas {
+    width: 36px;
+    height: 36px;
+    background-size: 18px;
+  }
+
+  #plantas .swiper-button-prev-plantas {
+    left: -10px;
+  }
+
+  #plantas .swiper-button-next-plantas {
+    right: -10px;
+  }
+}
+
+
+
+
+
+
+
+/*IMPLANTACAO*/
+
+
+#implantacao .swiperImplatacao {
+  height: auto;
+  overflow: hidden;
+}
+
+.carrossel-implantacao {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Imagem principal */
+#implantacao .swiperImplatacao .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Miniaturas */
+#implantacao .swiperImplatacaoThumbs {
+  width: 70%;
+  height: fit-content;
+}
+
+#implantacao .swiperImplatacaoThumbs .swiper-slide {
+  width: auto;
+  height: fit-content;
+  background: transparent;
+  text-align: center;
+}
+
+/* Botões (thumbs) */
+.step-implantacao {
+  display: inline-block;
+  padding: 10px 14px; /* mais espaçamento para caber o texto */
+  border: 2px solid var(--color-azul);
+  color: var(--color-azul);
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  width: 100%;
+  width: fit-content;
+  font-weight: 600;
+  white-space: nowrap; 
+}
+
+.step-implantacao:hover {
+  background-color: var(--color-azul);
+  color: #fff;
+}
+
+/* Estado ativo da miniatura */
+#implantacao .swiperImplatacaoThumbs .swiper-slide-thumb-active .step-planta {
+  background-color: var(--color-azul);
+  color: #fff;
+  border-color: var(--color-azul);
+}
+
+/* ======================
+   NAVEGAÇÃO (SETAS)
+====================== */
+#implantacao .swiper-button-next-implantacao,
+#implantacao .swiper-button-prev-implantacao {
+  position: absolute;
+  top: 100%;
+  width: 44px;
+  height: 44px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-size: 34px; /* controla o tamanho do ícone */
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Lado esquerdo e direito */
+#implantacao .swiper-button-prev-implantacao {
+  left: 35%;
+  background-image: url('/images/seta-esquerda-azul.png');
+}
+
+#implantacao .swiper-button-next-implantacao {
+  right: 35%;
+  background-image: url('/images/seta-direita-azul.png');
+}
+
+/* Remove pseudo-elementos antigos */
+#implantacao .swiper-button-prev-implantacao::after,
+#implantacao .swiper-button-next-implantacao::after {
+  content: none;
+}
+
+/* Desabilitado */
+#implantacao .swiper-button-disabled {
+  opacity: 0.4;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #implantacao .swiperImplatacaoThumbs .swiper-slide {
+    flex: 1 0 45%;
+  }
+
+  .step-planta {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  #implantacao .swiper-button-next-implantacao,
+  #implantacao .swiper-button-prev-implantacao {
+    width: 36px;
+    height: 36px;
+    background-size: 20px;
+  }
+
+  #implantacao .swiper-button-prev-implantacao {
+    left: 20%;
+  }
+
+  #implantacao .swiper-button-next-implantacao {
+    right: 20%;
+  }
+}
