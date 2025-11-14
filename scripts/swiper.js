@@ -148,11 +148,11 @@ function SwiperPlantas() {
     // 🔹 Responsividade
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 4,
         spaceBetween: 10,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 15,
       },
       1024: {
@@ -190,7 +190,7 @@ function SwiperImplatacao() {
     // 🔹 Responsividade
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 10,
       },
       768: {

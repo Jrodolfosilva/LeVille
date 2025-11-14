@@ -501,7 +501,7 @@ a{
     padding: 90px 12px;
     background-color:#fff;
      background-image: url("/images/barra.webp");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: top;
 }
 
@@ -639,6 +639,10 @@ a{
     width: 100%;
 }
 
+#mapa .mapa-localizacao img{
+    height: auto;
+}
+
 
 
 /*INCORPORACAO*/
@@ -650,7 +654,7 @@ a{
 
     background-image: url('/images/barra.webp');
     background-position: bottom;
-    background-repeat: no-repeat
+    background-repeat: repeat-x
 
 }
 
@@ -728,6 +732,10 @@ footer > .wrapper p{
 
 }
 
+.imobel-footer{
+    padding-left: 0;
+}
+
 .contato-leville-footer ul{
     display: flex;
     flex-direction: column;
@@ -749,6 +757,10 @@ footer > .wrapper p{
 
 .contato-footer{
     padding: 30px;
+}
+
+.contato-footer{
+    padding-right: 0;
 }
 
 

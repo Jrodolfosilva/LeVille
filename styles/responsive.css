@@ -1,0 +1,685 @@
+@media (max-width: 767px) {
+
+    .form{
+        display: none;
+    }
+    /* Estrutura Geral */
+    .wrapper {
+        padding: 0px 12px; /* Garante que o wrapper tenha padding nas laterais */
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 50px;
+        line-height: 48px;
+        margin: 10px 0 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    /* HEADER */
+    .top-header ul {
+        justify-content: end; 
+        
+    }
+    
+    .menu-header .menu {
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu-header .menu nav ul {
+        flex-direction: column; 
+        align-items: start;
+        gap: 10px;
+        display: none;
+
+
+    }
+    
+    .menu-header .menu nav ul li a {
+        padding: 8px;
+    }
+    
+    /* BANNER */
+    .banner-conteudo {
+        flex-direction: column; 
+        min-height: auto;
+        padding: 80px 0 40px;
+        gap: 40px;
+    }
+    
+   
+    .banner-conteudo > div {
+        width: 100%; /* Ocupa a largura total */
+        text-align: center;
+    }
+    
+    .localizacao {
+        margin: 0 auto 20px; /* Centraliza a localização */
+    }
+    
+    .banner-conteudo h1, 
+    .banner-conteudo p {
+        text-align: center;
+        padding-left: 0; /* Remove padding */
+    }
+    
+    .banner-conteudo p::before {
+        content: none; /* Remove a barra lateral do texto */
+    }
+
+     .banner-conteudo p{
+        font-size: 16px;
+    }
+    
+    .banner-conteudo a.botao-cta {
+        margin: 20px auto 0; /* Centraliza o botão */
+    }
+
+    /* BENEFÍCIOS */
+    .carrossel-beneficios ul {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px 12px;
+        gap: 0px;
+        display: none;
+    }
+
+    
+
+    
+    /* EMPREENDIMENTO */
+    #empreendimento {
+        padding: 90px 12px;
+    }
+
+    #empreendimento .wrapper {
+        flex-direction: column; /* Imagem acima do texto */
+        gap: 40px;
+    }
+
+    #empreendimento .wrapper img {
+        margin-bottom: 0 !important; /* Corrige margem negativa da imagem */
+        max-width: 100% !important;
+    }
+
+    .conteudo-empreendimento > img{
+        width: 220px;
+        height: auto;
+    }
+    .conteudo-empreendimento .botao-whatsapp {
+        width: 100%;
+    }
+
+
+
+
+    /* LAZER */
+    #lazer {
+        padding:90px 12px
+    }
+
+    #lazer h2, 
+    #lazer .wrapper > p {
+        width: 100%; /* Ocupa a largura total */
+        text-align: center;
+    }
+    #lazer .wrapper > p {
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    #lazer .lazerSwiper{
+        height: auto;
+    }
+
+    #lazer .infra-lazer ul {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* 2 ou 3 colunas de ícones */
+        padding-top: 40px;
+        gap: 20px;
+    }
+    
+
+
+
+
+    /* PLANTAS */
+    #plantas {
+        padding: 90px 12px;
+    }
+
+    #plantas .wrapper {
+        flex-direction: column; 
+        gap: 40px;
+    }
+
+    #plantas .wrapper > div {
+        max-width: 100%; /* Ocupa a largura total */
+    }
+
+    #plantas .conteudo-plantas {
+        padding-left: 0; /* Remove padding e barra lateral */
+    }
+    
+    #plantas .conteudo-plantas::before {
+        content: none;
+    }
+    
+    #plantas .swiperPlantasThumbs {
+        margin-bottom: 20px !important;
+    }
+    
+    /* NAVEGAÇÃO PLANTAS */
+    #plantas .swiper-button-prev-plantas {
+        left: 10%; 
+        background-size: 36px;
+    }
+    #plantas .swiper-button-next-plantas {
+        right: 10%; 
+        background-size: 36px;
+
+    }
+
+
+
+
+
+
+
+
+    /* IMPLANTAÇÃO */
+    #implantacao {
+        padding: 90px 12px;
+    }
+
+    #implantacao .wrapper {
+        flex-direction: column-reverse; 
+        gap: 40px;
+    }
+
+    #implantacao .wrapper > div,
+    #implantacao .carrossel-implantacao {
+        min-width: 100% !important; 
+    }
+
+    #implantacao .swiperImplatacaoThumbs{
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    #implantacao .swiperImplatacaoThumbs .swiper-slide{
+        flex: 0;
+    }
+
+    #implantacao .swiper-button-next-implantacao, #implantacao .swiper-button-prev-implantacao{
+        background-size: 36px;
+    }
+
+
+
+
+
+
+
+    /* DIFERENCIAIS */
+    #diferenciais {
+        padding: 90px 12px;
+    }
+
+    #diferenciais .wrapper h2 {
+        width: 100%;
+    }
+
+    #diferenciais .infra-diferenciais ul {
+        grid-template-columns: 1fr 1fr;
+        padding-top: 40px;
+        gap: 30px;
+    }
+
+    /* LOCALIZAÇÃO (MAPA) */
+    #mapa {
+        padding: 90px 0 0;
+        gap: 40px;
+    }
+
+    #mapa .wrapper h2,
+    #mapa .wrapper p {
+        width: 100%;
+        padding: 0 12px;
+    }
+    
+    .lista-destinos {
+        grid-template-columns: 1fr; /* Uma coluna para lista de destinos */
+        width: 95%;
+        padding: 0 12px;
+    }
+
+    .info-esquerda img{
+        width: 20px;
+    }
+
+    .descricao,.tempo{
+        font-size: 13px!important;
+    }
+
+
+
+    
+    /* INCORPORADORA */
+    #incorporadora {
+        padding: 90px 12px;
+    }
+    
+    #incorporadora .wrapper {
+        flex-direction: column; 
+        gap: 40px;
+    }
+    
+    #incorporadora .conteudo-incorporadora {
+        min-width: 100% !important;
+    }
+
+    #incorporadora .conteudo-incorporadora img{
+        display: none;
+    }
+    
+    #incorporadora .equipe-incorporadora img{
+        width: 100%;
+    }
+
+
+
+
+
+    
+    /* FOOTER */
+    footer > .wrapper {
+        gap: 60px;
+    }
+    .contato-footer,.imobel-footer, .leville-footer {
+        padding: 0 12px;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+
+    .conteudo-empreendimento .botao-whatsapp{
+        font-size: 16px;
+    }
+
+      #implantacao .swiper-wrapper{
+        gap: 10px;
+      } 
+      .step-implantacao {
+        font-size: 12px;
+      }
+
+      #diferenciais .infra-diferenciais ul{
+        gap: 10px;
+      }
+
+    .info-esquerda img{
+        display: none;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Estrutura Geral */
+    .wrapper {
+        max-width: 90%; /* Limita um pouco para o conteúdo não tocar muito nas bordas */
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    h2 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    /* HEADER */
+    .menu-header .menu {
+        gap: 20px;
+    }
+    
+    .menu-header .menu nav ul {
+        flex-wrap: wrap; /* Permite que o menu quebre se for muito longo */
+        justify-content: center;
+    }
+    
+    /* BANNER */
+    .banner-conteudo {
+        gap: 40px;
+        min-height: 80vh;
+    }
+
+    .banner-conteudo > div {
+        width: 50%;
+    }
+    
+    .banner-conteudo img {
+        max-width: 300px; /* Reduz a largura da imagem do formulário */
+        margin-left: auto;
+    }
+
+
+
+    .carrossel-beneficios ul{
+        gap: 4px;
+    }
+    .carrossel-beneficios ul li {
+        font-size: 6px;
+    }
+
+
+    /* EMPREENDIMENTO */
+
+   
+    #empreendimento .wrapper {
+        gap: 40px;
+        flex-direction: column; /* Imagem acima do texto */
+        text-align: center;
+    }
+
+    #empreendimento .wrapper h2 {
+        text-align: center;
+    }
+
+    #empreendimento .wrapper div{
+        width: 100%;
+    }
+
+     #empreendimento .wrapper div img{
+        margin: 0 auto;
+     }
+
+    #empreendimento .wrapper .img-empreendimento{
+        margin: 0!important;
+        max-width: 100%;
+        min-width: 100%;
+
+    }
+
+     .conteudo-empreendimento{
+        align-items: center;
+    }
+    /* LAZER */
+
+    .lazerSwiper{
+        height: auto;
+    }
+    #lazer h2, 
+    #lazer .wrapper > p {
+        width: 90%; 
+    }
+    
+    #lazer .infra-lazer ul {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 4 a 5 colunas de ícones */
+        gap: 20px;
+    }
+
+    /* PLANTAS */
+    #plantas .wrapper {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    #plantas .wrapper > div {
+        max-width: 100%; /* Desativa max-width para melhor uso do espaço */
+    }
+
+
+
+
+    #plantas .swiper-button-next-plantas, #plantas .swiper-button-prev-plantas{
+        background-size: 60px;
+        width: 60px;
+    }
+
+    
+
+    /* IMPLANTAÇÃO */
+    #implantacao .wrapper {
+        flex-direction: column; /* Carrossel acima do texto */
+        gap: 40px;
+    }
+
+    #implantacao .wrapper > div,
+    #implantacao .wrapper .carrossel-implantacao {
+        min-width: 100% !important;
+    }
+    
+    /* DIFERENCIAIS */
+    #diferenciais .infra-diferenciais ul {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* 2 ou 3 colunas */
+        gap: 40px;
+    }
+
+    #implantacao .swiperImplatacaoThumbs {
+        width: auto;
+        height: fit-content;
+    }
+    
+    #implantacao .swiperImplatacaoThumbs .swiper-slide {
+        flex: 0;
+    }
+
+
+    /* LOCALIZAÇÃO (MAPA) */
+    #mapa .wrapper h2,
+    #mapa .wrapper p {
+        width: 80%;
+    }
+    
+    .lista-destinos {
+        width: 95%;
+        grid-template-columns: 1fr; /* Uma coluna para lista de destinos */
+    }
+    
+    /* INCORPORADORA */
+    #incorporadora .wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    #incorporadora .conteudo-incorporadora {
+        min-width: 100% !important;
+    }
+
+    #incorporadora .equipe-incorporadora img {
+        width:60%;
+        height: auto;
+    }
+
+    
+    /* FOOTER */
+    footer > .wrapper {
+        grid-template-columns: 1fr 1fr; /* 2 colunas no footer */
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .wrapper {
+        max-width: 960px; /* Reduz um pouco o wrapper para telas menores */
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 70px;
+        line-height: 68px;
+    }
+
+    h2 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    /*HEADER*/
+    .menu-header .menu nav ul li a {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 10px 4px;
+    }
+    
+
+
+
+    .banner-conteudo > div{
+        min-width: 60%;
+    }
+    
+    .carrossel-beneficios ul{
+        
+        gap: 10px;
+    }
+
+
+    .carrossel-beneficios ul li{
+        font-size: 10px;
+
+    }
+
+
+
+
+
+
+    /*LAZER*/
+
+    #lazer{
+        padding-top: 90px;
+    }
+
+    .lazerSwiper{
+        height: auto;
+    }
+
+    .swiper-button-prev-thumbs {
+        left: 0;
+    }
+    
+    .swiper-button-next-thumbs {
+        right: 0;
+    }
+
+    
+    /*PLANTA*/
+
+    #plantas .swiper-button-next-plantas {
+        right: 0;
+    }
+    
+    #plantas .swiper-button-prev-plantas {
+        left: 0;
+    }
+
+    /*ESTRUTURA*/
+
+    #implantacao .swiperImplatacaoThumbs {
+        width: auto;
+        height: fit-content;
+    }
+
+   
+
+
+    #empreendimento .wrapper {
+        gap: 50px;
+    }
+    
+    /* PLANTAS */
+    #plantas .wrapper {
+        gap: 50px;
+    }
+    
+    /* IMPLANTAÇÃO */
+    #implantacao .wrapper {
+        gap: 50px;
+        align-items: start;
+    }
+
+    /* LOCALIZAÇÃO (MAPA) */
+    #mapa .wrapper h2,
+    #mapa .wrapper p {
+        width: 70%;
+    }
+    
+    .lista-destinos {
+        width: 90%;
+    }
+}
+
+
+
+@media (min-width:1440px) {
+    .banner-conteudo{
+        min-height: 90vh;
+    
+    }
+}
+/* ======================
+   AJUSTES RESPONSIVOS SWIPER
+====================== */
+
+/* Dispositivos Médios e Pequenos (max 991px) */
+@media (max-width: 991px) {
+    /* Lazer Carrossel */
+    .carrossel-lazer {
+        padding: 0 10px; /* Reduz o padding para deixar as setas mais próximas */
+    }
+    
+    /* Botões do Carrossel de Lazer (Thumbs) */
+    .swiper-button-prev-thumbs,
+    .swiper-button-next-thumbs {
+        margin-top: -65px; /* Ajusta a posição vertical */
+        width: 25px;
+        height: 25px;
+    }
+    
+    .swiper-button-prev-thumbs {
+        left: 0; 
+    }
+
+    .swiper-button-next-thumbs {
+        right: 0; 
+    }
+    
+    /* Reduz o tamanho da seta (ícone) */
+    .swiper-button-prev-thumbs:after,
+    .swiper-button-next-thumbs:after {
+        font-size: 20px;
+    }
+
+    /* Botões do Carrossel Plantas e Implantação - Seções com layout em coluna */
+
+    #plantas .swiper-button-prev-plantas,
+    #plantas .swiper-button-next-plantas,
+    #implantacao .swiper-button-prev-implantacao,
+    #implantacao .swiper-button-next-implantacao {
+        /* A posição das setas foi tratada no global.css para alinhar no centro */
+        margin-top: 10px; /* Reduz a margem superior */
+    }
+    
+    #plantas .swiperPlantasThumbs .swiper-slide,
+    #implantacao .swiperImplatacaoThumbs .swiper-slide {
+        width: 100%; /* Garante que os botões (thumbs) ocupem a largura total em mobile */
+    }
+}
+
+
+
