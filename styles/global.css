@@ -701,18 +701,60 @@ footer > .wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 90px 12px;
-
+    gap: 30px;
+    color: var(--color-cinza);
 
 
 }
 
-footer > .wrapper img{
-    max-width: 100%;
+footer > .wrapper h4{
+    color: var(--color-laranja);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
+
+footer > .wrapper p{
+    line-height: 20px;
+}
+
+.imobel-footer,
+.leville-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 30px;
+
+}
+
+.contato-leville-footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.social{
+    flex-direction: row!important;
+    margin-top: 20px;
+}
+
+.contato-leville-footer ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 25px;
+}
+
+.contato-footer{
+    padding: 30px;
+}
+
 
 .footer-bottom{
     background-color:var(--color-laranja);
-    padding:6px 0px;
+    padding:6px 12px;
     text-align: right;
 
 }
