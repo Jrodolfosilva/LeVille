@@ -58,7 +58,11 @@
                 <a href="/">
                     <img src="./images/logo-leville-cor.png" width="156"  alt="Logo Leville"/>
                 </a>
-                <nav>
+                <nav id="menuPrincipal">
+                    <div class="toggle-menu-mobile">
+                        <img src="/images/menus.png" alt="">
+                    </div>
+
                     <ul>
                         <li>
                             <a href="/">Home</a>
@@ -85,6 +89,7 @@
                             <a href="/#contato">Contato</a>
                         </li>
                     </ul>
+
                 </nav>
             </div>
         </div>
@@ -694,31 +699,54 @@
 
 
 
+    <!-- LightGallery ---->
 
     <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const imagens = document.querySelectorAll('.lg');
+        document.addEventListener("DOMContentLoaded", function() {
+        const imagens = document.querySelectorAll('.lg');
 
-  imagens.forEach(img => {
-    // cria um link ao redor da imagem
-    const wrapper = document.createElement('a');
-    wrapper.href = img.src;
-    wrapper.dataset.src = img.src;
-    wrapper.classList.add('lightgallery-item');
+        imagens.forEach(img => {
+            // cria um link ao redor da imagem
+            const wrapper = document.createElement('a');
+            wrapper.href = img.src;
+            wrapper.dataset.src = img.src;
+            wrapper.classList.add('lightgallery-item');
 
-    img.parentNode.insertBefore(wrapper, img);
-    wrapper.appendChild(img);
-  });
+            img.parentNode.insertBefore(wrapper, img);
+            wrapper.appendChild(img);
+        });
 
-  // inicializa o lightGallery em todos os links
-  lightGallery(document.body, {
-    selector: '.lightgallery-item',
-    plugins: [lgZoom, lgThumbnail],
-    licenseKey: '0000-0000-000-0000', // não precisa para uso básico
-    speed: 300,
-  });
-});
-</script>
+        // inicializa o lightGallery em todos os links
+        lightGallery(document.body, {
+            selector: '.lightgallery-item',
+            plugins: [lgZoom, lgThumbnail],
+            licenseKey: '0000-0000-000-0000', // não precisa para uso básico
+            speed: 300,
+        });
+        });
+    </script>
+
+    <!-- Menu mobile-->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.querySelector('.toggle-menu-mobile');
+            const navElement = document.getElementById('menuPrincipal'); // O elemento <nav>
+
+            if (toggleButton && navElement) {
+                toggleButton.addEventListener('click', () => {
+                    navElement.classList.toggle('menu-open');
+                });
+
+                const navLinks = navElement.querySelectorAll('ul li a');
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navElement.classList.remove('menu-open');
+                    });
+                });
+            }
+        });
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>

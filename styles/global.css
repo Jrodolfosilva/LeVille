@@ -93,6 +93,7 @@ a{
 
 
 /*HEADER*/
+
 .top-header{
     background-color:var(--color-laranja);
     padding:6px 12px;
@@ -147,6 +148,68 @@ a{
     border-color: var(--color-laranja);
     
 }
+
+
+
+header{
+    position: relative;
+}
+
+.toggle-menu-mobile {
+    display: none; /* Esconde por padrão no desktop */
+    font-size: 1.5rem; /* Ajuste o tamanho do texto ou ícone */
+    cursor: pointer;
+    z-index: 100; /* Garante que fique acima dos outros elementos */
+    color: var(--color-laranja); /* Se você usar um ícone, este será a cor */
+}
+
+
+@media screen and (max-width: 1140px) {
+    .menu-header .menu nav ul {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 30px 12px;
+        z-index: 999;
+    }
+    
+    .menu-header .menu nav ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-header .menu nav ul li a {
+        display: block; 
+        padding: 15px;
+        border-bottom: none; 
+    }
+
+    .toggle-menu-mobile {
+        display: block; 
+    }
+
+    .menu-header .menu nav {
+        display: flex; 
+        justify-content: flex-end;
+    }
+
+    .menu-header .menu nav.menu-open ul {
+        display: flex; 
+    }
+}
+
+
+
+
+
+
+
+
 
 /*BANNER*/
 
