@@ -193,21 +193,33 @@
 /* ======================
    NAVEGAÇÃO (SETA)
 ====================== */
+
+.swiper-button-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.swiper-button-zoom-planta img{
+  cursor: pointer;
+  width: 40px;
+
+}
+
+
+
+
 #plantas .swiper-button-next-plantas,
 #plantas .swiper-button-prev-plantas {
-  position: absolute;
-  top: 100%;
-  width: 44px;
-  height: 44px;
-  z-index: 10;
+   width: 50px;
+  height: 50px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  background-size: 40px; /* controla o tamanho */
+  background-size: 50px; 
   background-repeat: no-repeat;
   background-position: center;
+  transition: opacity 0.3s ease;
 }
 
 /* Lado esquerdo e direito */
@@ -316,7 +328,7 @@
 }
 
 /* Estado ativo da miniatura */
-#implantacao .swiperImplatacaoThumbs .swiper-slide-thumb-active .step-planta {
+#implantacao .swiperImplatacaoThumbs .swiper-slide-thumb-active .step-implantacao {
   background-color: var(--color-azul);
   color: #fff;
   border-color: var(--color-azul);
@@ -325,19 +337,39 @@
 /* ======================
    NAVEGAÇÃO (SETAS)
 ====================== */
+
+
+
+.swiper-button-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.swiper-button-zoom-implantacao img{
+  cursor: pointer;
+  width: 40px;
+
+}
+
+
 #implantacao .swiper-button-next-implantacao,
 #implantacao .swiper-button-prev-implantacao {
+  /*
   position: absolute;
   top: 100%;
-  width: 44px;
-  height: 44px;
   z-index: 10;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  background-size: 34px; /* controla o tamanho do ícone */
+  */
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-size: 50px; 
   background-repeat: no-repeat;
   background-position: center;
   transition: opacity 0.3s ease;
@@ -383,11 +415,122 @@
     background-size: 20px;
   }
 
-  #implantacao .swiper-button-prev-implantacao {
-    left: 20%;
-  }
+}
 
-  #implantacao .swiper-button-next-implantacao {
-    right: 20%;
-  }
+
+
+
+
+
+
+/*BANNER*/
+
+.banner {
+    position: relative;
+    overflow: hidden; 
+    
+}
+
+.swiperBannerFundo {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+.blur-banner,
+.banner-conteudo {
+    position: relative; 
+    z-index: 2; 
+}
+
+.swiperBannerFundo .swiper-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.fundo-slide-1 {
+    background-image: url("/images/banner.webp");
+}
+.fundo-slide-2 {
+    background-image: url('http://127.0.0.1:5500/images/academia.png');
+}
+
+.fundo-slide-3 {
+    background-image: url('http://127.0.0.1:5500/images/academia.png');
+}
+
+
+
+
+.swiper-button-nav-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 99;
+  margin-top: -30px;
+}
+
+
+
+#home .swiper-button-next-banner,
+#home .swiper-button-prev-banner {
+    display: block;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 50px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 0.3s ease;
+    padding: 12px 20px;
+    
+   
+}
+
+#home .swiper-button-prev-banner {
+    left: 0; 
+    background-image: url('/images/seta-esquerda.png');
+}
+
+#home .swiper-button-next-banner {
+    right: 0; 
+    background-image: url('/images/seta-direita.png');
+}
+
+#home .swiper-button-prev-banner::after,
+#home .swiper-button-next-banner::after {
+    content: none;
+}
+
+#home .swiper-button-disabled {
+    opacity: 0.1;
+    cursor: auto;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    #home .swiper-button-next-banner,
+    #home .swiper-button-prev-banner {
+        width: 36px;
+        height: 36px;
+        background-size: 40px;
+    }
+
+    #home .swiper-button-prev-banner {
+        left: 5px;
+    }
+
+    #home .swiper-button-next-banner {
+        right: 5px;
+    }
 }

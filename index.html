@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leville</title>
+    <title>Le Ville | Viva a arte de morar bem</title>
+    <meta name="description" content="Descubra o equilibrio perfeito entre viver
+com estilo ou investir com inteligência!"/>
     
     <!--Importação SWIPER-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -30,23 +32,23 @@
             <div class="wrapper">
                 <ul>
                     <li>
-                        <a href="tel:+5599999999">
+                        <a href="tel:+5571991447770" target="_blank">
                             <img src="./images/whatsapp.png" width="16" alt=""/>
-                            (24) 9 9999 - 9999
+                            71 9.9144-7770
                         </a>
                     </li>
                     <li>
-                        <a href="facebook">
+                        <a href="facebook" target="_blank">
                             <img src="./images/facebook.png" width="16" alt=""/>
                         </a>
                     </li>
                     <li>
-                        <a href="linkedin">
+                        <a href="linkedin" target="_blank">
                             <img src="./images/linkedin.png" width="16" alt=""/>
                         </a>
                     </li>
                     <li>
-                        <a href="youtube">
+                        <a href="youtube" target="_blank">
                             <img src="./images/facebook.png" width="16" alt=""/>
                         </a>
                     </li>
@@ -80,7 +82,7 @@
                             <a href="/#diferenciais">Diferenciais</a>
                         </li>
                         <li>
-                            <a href="/#localizacao">Localização</a>
+                            <a href="/#mapa">Localização</a>
                         </li>
                         <li>
                             <a href="/#incorporadora">Incorporadora</a>
@@ -95,7 +97,18 @@
         </div>
     </header>
     <main>
+          
         <section class="banner" id="home">
+            
+            <div class="swiper swiperBannerFundo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide fundo-slide-1">
+                        </div>
+                    <div class="swiper-slide fundo-slide-2"></div>
+                    <div class="swiper-slide fundo-slide-3"></div>
+                </div>
+                    
+            </div>
             <div class="blur-banner">
                 <div class="wrapper banner-conteudo">
                     <div>
@@ -111,14 +124,18 @@
                         </p>
                         <a href="" class="botao-cta">Saiba mais</a>
                     </div>
-                    <div>
-                        <!--                        <img src="./images/form.png" width="400" class="form" style="margin-left: auto;  display: block;" alt="">
--->
-
-
-
+                    <div style="min-width: 30%;">
+                        <img src="./images/form.png" width="200px!important;display: block;" style="width: 70%;display: block;margin-left: auto;" class="form" alt="">
                     </div>
                 </div>
+
+                <!-- Botões de navegação -->
+                    <div class="swiper-button-nav-banner" style="z-index: 99999;">
+                        <div class="swiper-button-prev-banner"></div>
+                        <div class="swiper-button-zoom-banner"><img width="40" style="max-width: 40px;" fetchpriority="low" loading="lazy" src="/images/mouse.png" alt=""></div>
+                        <div class="swiper-button-next-banner"></div>
+                    </div>
+
             </div>
         </section>
 
@@ -227,35 +244,35 @@
             <div class="infra-lazer">
                 <ul>
                    <li>
-                        <img src="/images/academia.webp" loading="lazy" fetchpriority="low" alt="" srcset="">
+                        <img src="/images/ginastica.png" loading="lazy" fetchpriority="low" alt="" width="64">
                         <span>Academia</span>
                    </li>
                    <li>
-                        <img src="/images/pet.png" loading="lazy" fetchpriority="low" alt="" srcset="">
+                        <img src="/images/patas.png"  loading="lazy" fetchpriority="low" alt="" width="64">
                         <span>Espaço pet</span>
                    </li>
                    <li>
-                        <img src="/images/cinema.png" loading="lazy" fetchpriority="low" alt="" srcset="">
+                        <img src="/images/pipoca.png"  loading="lazy" fetchpriority="low" alt="" width="64">
                         <span>Cinema</span>
                    </li>
                    <li>
-                        <img src="/images/cow.png" loading="lazy" fetchpriority="low" alt="" srcset="">
+                        <img src="/images/coworking.png" loading="lazy" fetchpriority="low" alt="" width="64">
                         <span>Coworking</span>
                    </li>
                    <li>
-                        <img src="/images/brinquedo.png" loading="lazy" fetchpriority="low" alt="" srcset="">
+                        <img src="/images/brinquedos.png" loading="lazy" fetchpriority="low" alt="" width="64">
                         <span>Brinquedoteca</span>
                    </li>
                    <li>
-                        <img src="/images/piscina.png" loading="lazy" fetchpriority="low" alt="" srcset="">
+                        <img src="/images/piscina.png" loading="lazy" fetchpriority="low" alt="" width="64">
                         <span>Piscina</span>
                    </li>
                    <li>
-                        <img src="/images/festa.png" loading="lazy" fetchpriority="low" alt="" srcset="">
+                        <img src="/images/brinde.png" loading="lazy" fetchpriority="low" alt="" width="64">
                         <span>Salão de festas</span>
                    </li>
                    <li>
-                        <img src="/images/zen.png" loading="lazy" fetchpriority="low"  alt="" srcset="">
+                        <img src="/images/ioga.png" loading="lazy" fetchpriority="low"  alt="" width="64">
                         <span>Espaço Zen</span>
                    </li>
                 </ul>
@@ -291,23 +308,27 @@
                     <div class="swiper swiperPlantas">
                         <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/images/planta01.png" loading="lazy" fetchpriority="low" alt="Planta Final 1" />
+                            <img src="/images/planta01.png" class="lg2" loading="lazy" fetchpriority="low" alt="Planta Final 1" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/images/planta01.png" loading="lazy" fetchpriority="low" alt="Planta Final 2"  />
+                            <img src="/images/planta01.png" class="lg2" loading="lazy" fetchpriority="low" alt="Planta Final 2"  />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/images/planta01.png" loading="lazy" fetchpriority="low" alt="Planta Final 3" />
+                            <img src="/images/planta01.png" class="lg2" loading="lazy" fetchpriority="low" alt="Planta Final 3" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/images/planta01.png" loading="lazy" fetchpriority="low" alt="Planta Final 4"  />
+                            <img src="/images/planta01.png" class="lg2" loading="lazy" fetchpriority="low" alt="Planta Final 4"  />
                         </div>
                         </div>
                     </div>
 
                     <!-- Botões de navegação -->
-                    <div class="swiper-button-next-plantas"></div>
-                    <div class="swiper-button-prev-plantas"></div>
+                     <div class="swiper-button-nav">
+                        <div class="swiper-button-prev-plantas"></div>
+                        <div class="swiper-button-zoom-planta"><img width="30" style="max-width: 30px;" fetchpriority="low" loading="lazy" src="/images/lupa-branca.png" alt=""></div>
+                        <div class="swiper-button-next-plantas"></div>
+
+                     </div>
 
                 </div>
 
@@ -336,23 +357,28 @@
                     <div class="swiper swiperImplatacao">
                         <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/images/implantacao 01.png" loading="lazy" fetchpriority="low" alt="Planta Final 1" />
+                            <img src="/images/implantacao 01.png" class="lg3" loading="lazy" fetchpriority="low" alt="Planta Final 1" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/images/implantacao 01.png" loading="lazy" fetchpriority="low" alt="Planta Final 2"  />
+                            <img src="/images/implantacao 01.png" class="lg3" loading="lazy" fetchpriority="low" alt="Planta Final 2"  />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/images/implantacao 01.png" loading="lazy" fetchpriority="low" alt="Planta Final 3" />
+                            <img src="/images/implantacao 01.png" class="lg3" loading="lazy" fetchpriority="low" alt="Planta Final 3" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/images/implantacao 01.png" loading="lazy" fetchpriority="low" alt="Planta Final 4"  />
+                            <img src="/images/implantacao 01.png" class="lg3" loading="lazy" fetchpriority="low" alt="Planta Final 4"  />
                         </div>
                         </div>
                     </div>
 
                     <!-- Botões de navegação -->
-                    <div class="swiper-button-next-implantacao"></div>
-                    <div class="swiper-button-prev-implantacao"></div>
+                     <div class="swiper-button-nav">
+                        <div class="swiper-button-prev-implantacao"></div>
+                        <div class="swiper-button-zoom-implantacao"><img width="30" fetchpriority="low" loading="lazy" style="max-width: 30px;" src="/images/lupa.png" alt=""></div>
+                        <div class="swiper-button-next-implantacao"></div>
+
+                     </div>
+                    
 
                 </div>
 
@@ -408,51 +434,51 @@
                 <div class="infra-diferenciais">
                     <ul>
                         <li>
-                                <img src="/images/acade.png" alt="" srcset="">
+                                <img src="/images/mesa-de-jantar.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Áreas comuns entregues decoradas, mobiliadas e equipadas</span>
                         </li>
                         <li>
-                                <img src="/images/pet.png" alt="" srcset="">
+                                <img src="/images/luz-led.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Lâmpadas de led em todas as áreas comuns para redução de energia</span>
                         </li>
                         <li>
-                                <img src="/images/cinema.png" alt="" srcset="">
+                                <img src="/images/captacao-de-agua-da-chuva.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Captação de água da chuva</span>
                         </li>
                         <li>
-                                <img src="/images/cow.png" alt="" srcset="">
+                                <img src="/images/escudo.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Portaria com clausura e vidro blindado</span>
                         </li>
                         <li>
-                                <img src="/images/brinquedo.png" alt="" srcset="">
+                                <img src="/images/cctv.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Infraestrutura para instalação de câmeras de segurança</span>
                         </li>
                         <li>
-                                <img src="/images/piscina.png" alt="" srcset="">
+                                <img src="/images/banheiro.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Bacias sanitárias inteligentes, com válvula de controle de fluxo</span>
                         </li>
                         <li>
-                                <img src="/images/festa.png" alt="" srcset="">
+                                <img src="/images/ar-condicionado.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Áreas comuns fechadas entregues climatizadas*</span>
                         </li>
                         <li>
-                                <img src="/images/zen.png" alt="" srcset="">
+                                <img src="/images/pista-de-bicicleta.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Bicicletários nas garagens</span>
                         </li>
                         <li>
-                                <img src="/images/zen.png" alt="" srcset="">
+                                <img src="/images/gerador-eletrico.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Casa de gerador para instalação pelo condomínio</span>
                         </li>
                         <li>
-                                <img src="/images/zen.png" alt="" srcset="">
+                                <img src="/images/area-restrita.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Portaria com controle de acesso</span>
                         </li>
                         <li>
-                                <img src="/images/zen.png" alt="" srcset="">
+                                <img src="/images/medicao-de-altura.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Pé direito amplo nas áreas comuns</span>
                         </li>
                         <li>
-                                <img src="/images/zen.png" alt="" srcset="">
+                                <img src="/images/elevador.png" alt="" width="64" fetchpriority="low" loading="lazy">
                                 <span>Dois elevadores sociais e um elevador de serviço</span>
                         </li>
                     </ul>
@@ -572,7 +598,6 @@
             </div>           
         </section>
 
-
         <section class="incorporadora" id="incorporadora">
             <div class="wrapper">
                 
@@ -598,6 +623,66 @@
             </div>
 
         </section>
+
+
+
+<style>
+ .banner {
+    position: relative;
+    overflow: hidden; 
+    
+}
+
+.swiperBannerFundo {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+.blur-banner,
+.banner-conteudo {
+    position: relative; 
+    z-index: 2; 
+}
+
+.swiperBannerFundo .swiper-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.fundo-slide-1 {
+    background-image: url("/images/banner.webp");
+}
+.fundo-slide-2 {
+    background-image: url('http://127.0.0.1:5500/images/academia.png');
+}
+
+.fundo-slide-3 {
+    background-image: url('http://127.0.0.1:5500/images/academia.png');
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </main>
@@ -685,23 +770,15 @@
             </div>
         </div>
     </footer> 
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer src="/scripts/swiper.js"></script>
 
 
-
-
-
-
-
-
-
-
-
+    <!--Swipers-->
+    <script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script  src="/scripts/swiper.js"></script>
 
     <!-- LightGallery ---->
 
-    <script>
+    <script defer>
         document.addEventListener("DOMContentLoaded", function() {
         const imagens = document.querySelectorAll('.lg');
 
@@ -726,8 +803,130 @@
         });
     </script>
 
+    <!-- LightGallery planta ---->
+
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            const imagens = document.querySelectorAll('.lg2');
+            let lightGalleryInstance2;
+
+            imagens.forEach(img => {
+                const wrapper = document.createElement('a');
+                wrapper.href = img.src;
+                wrapper.dataset.src = img.src;
+                wrapper.classList.add('lightgallery-item2');
+
+                img.parentNode.insertBefore(wrapper, img);
+                wrapper.appendChild(img);
+            });
+
+            lightGalleryInstance2 = lightGallery(document.body, {
+                selector: '.lightgallery-item2',
+                plugins: [lgZoom, lgThumbnail],
+                licenseKey: '0000-0000-000-0000',
+                speed: 300,
+            });
+            
+            const zoomButton = document.querySelector('.swiper-button-zoom-planta');
+
+            if(zoomButton){
+                zoomButton.addEventListener("click",()=>{
+                    const swiperContainer = document.querySelector('.swiperPlantas');
+
+                    if(swiperContainer){
+                        const activeSlide = swiperContainer.querySelector('.swiper-slide-active');
+
+                        if(activeSlide){
+                            const lightGalleryItem = activeSlide.querySelector('.lightgallery-item2');
+
+                            if(lightGalleryItem){
+                                const allLightGalleryItems = document.querySelectorAll('.lightgallery-item2');
+                                let index = -1;
+
+                                allLightGalleryItems.forEach((item, i) => {
+                                    if (item === lightGalleryItem) {
+                                        index = i;
+                                    }
+                                });
+
+                                if (index !== -1 && lightGalleryInstance2) {
+                                    lightGalleryInstance2.openGallery(index);
+                                }
+                            }
+                        }
+                    }
+                })
+            }
+        });
+    </script>
+
+    <!-- LightGallery Implemetacao ---->
+
+    <script defer>
+    document.addEventListener("DOMContentLoaded", function() {
+        const imagens = document.querySelectorAll('.lg3');
+        let lightGalleryInstance3;
+
+        imagens.forEach(img => {
+            const wrapper = document.createElement('a');
+            wrapper.href = img.src;
+            wrapper.dataset.src = img.src;
+            wrapper.classList.add('lightgallery-item3');
+
+            img.parentNode.insertBefore(wrapper, img);
+            wrapper.appendChild(img);
+        });
+
+        lightGalleryInstance3 = lightGallery(document.body, {
+            selector: '.lightgallery-item3',
+            plugins: [lgZoom, lgThumbnail],
+            licenseKey: '0000-0000-000-0000',
+            speed: 300,
+        });
+
+        const zoomButton = document.querySelector('.swiper-button-zoom-implantacao');
+
+        if(zoomButton){
+            zoomButton.addEventListener("click",()=>{
+                const swiperContainer = document.querySelector('.swiperImplatacao');
+
+                if(swiperContainer){
+                    const activeSlide = swiperContainer.querySelector('.swiper-slide-active');
+
+                    if(activeSlide){
+                        const lightGalleryItem = activeSlide.querySelector('.lightgallery-item3');
+
+                        if(lightGalleryItem){
+                            const allLightGalleryItems = document.querySelectorAll('.lightgallery-item3');
+                            let index = -1;
+
+                            allLightGalleryItems.forEach((item, i) => {
+                                if (item === lightGalleryItem) {
+                                    index = i;
+                                }
+                            });
+
+                            if (index !== -1 && lightGalleryInstance3) {
+                                lightGalleryInstance3.openGallery(index);
+                            }
+                        } else {
+                             // alert("nao pegou o item lightgallery");
+                        }
+                    } else {
+                        // alert("nao tem slide ativo");
+                    }
+                } else {
+                    // alert("nao pegou o swiper container");
+                }
+            })
+        }
+    });
+    </script>
+
+
+
     <!-- Menu mobile-->
-    <script>
+    <script defer>
         document.addEventListener('DOMContentLoaded', () => {
             const toggleButton = document.querySelector('.toggle-menu-mobile');
             const navElement = document.getElementById('menuPrincipal'); // O elemento <nav>

@@ -1,96 +1,4 @@
 
-  
-  /*  function SwiperLazer(){  
-      let swiper = new Swiper(".lazerSwiperThumbs", {
-        spaceBetween: 20,
-        slidesPerView: 4,
-        freeMode: false,
-        watchSlidesProgress: true,
-        watchSlidesVisibility: true,
-        slideToClickedSlide: true,
-        preloadImages: false,
-
-        navigation: {
-          nextEl: '.swiper-button-next-thumbs', // Seletor para o botão "Próximo" das miniaturas
-          prevEl: '.swiper-button-prev-thumbs', // Seletor para o botão "Anterior" das miniaturas
-    },
-      });
-
-
-      let swiper2 = new Swiper(".lazerSwiper", {
-        spaceBetween: 10,
-        preloadImages: false,
-
-        thumbs: {
-          swiper: swiper,
-        },
-      });
-    };
-
-    SwiperLazer()
-    
-
-    function SwiperPlantas() {
-  // Miniaturas (thumbs)
-  const swiperPlantasThumbs = new Swiper(".swiperPlantasThumbs", {
-    spaceBetween: 10,
-    slidesPerView: 4, // Ajuste conforme o layout
-    freeMode: true,
-    watchSlidesProgress: true,
-    watchSlidesVisibility: true,
-    slideToClickedSlide: true,
-    preloadImages: false,
-    lazy: true, // garante lazy load nas imagens
-  });
-
-  // Principal (imagem grande)
-  const swiperPlantas = new Swiper(".swiperPlantas", {
-    spaceBetween: 10,
-    preloadImages: false,
-    lazy: true,
-    navigation: {
-      nextEl: ".swiper-button-next-plantas",
-      prevEl: ".swiper-button-prev-plantas",
-    },
-    thumbs: {
-      swiper: swiperPlantasThumbs,
-    },
-  });
-}
-
-    SwiperPlantas()
-
-
-
-function SwiperImplatacao() {
-  // Swiper de miniaturas (thumbs)
-  const swiperImplatacaoThumbs = new Swiper(".swiperImplatacaoThumbs", {
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: false,
-    watchSlidesProgress: true,
-    watchSlidesVisibility: true,
-    slideToClickedSlide: true,
-    preloadImages: false,
-  });
-
-  // Swiper principal
-  const swiperImplatacao = new Swiper(".swiperImplatacao", {
-    spaceBetween: 10,
-    preloadImages: false,
-    thumbs: {
-      swiper: swiperImplatacaoThumbs,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next-implantacao",
-      prevEl: ".swiper-button-prev-implantacao",
-    },
-  });
-}
-
-SwiperImplatacao();
-*/
-    
 
 function SwiperLazer() {
   const swiperThumbs = new Swiper(".lazerSwiperThumbs", {
@@ -215,3 +123,30 @@ function SwiperImplatacao() {
   });
 }
 SwiperImplatacao();
+
+
+
+
+function SwiperHome() {
+  const swiperHome = new Swiper(".swiperBannerFundo", {
+    slidesPerView: 1, 
+    spaceBetween: 0,
+    loop: true, 
+    effect: 'fade', 
+    speed: 800,
+        autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+
+    // ➡️ Navegação usando os botões dentro do banner-conteudo
+    navigation: {
+      nextEl: ".swiper-button-next-banner",
+      prevEl: ".swiper-button-prev-banner",
+    },
+
+    
+  });
+}
+
+SwiperHome();

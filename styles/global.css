@@ -42,6 +42,11 @@
 
 }
 
+.lightgallery-item,.lightgallery-item3,.lightgallery-item2{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 body{
     background-color: var(--color-cinza);
@@ -379,8 +384,14 @@ header{
     font-size: 20px;
     font-weight: 400;
     width: fit-content;
+    transition: 0.5s;
 }
 
+
+.conteudo-empreendimento .botao-whatsapp:hover{
+    background-color:rgb(29, 182, 29);
+
+}
 
 
 
