@@ -131,11 +131,11 @@ function SwiperHome() {
   const swiperHome = new Swiper(".swiperBannerFundo", {
     slidesPerView: 1, 
     spaceBetween: 0,
-    loop: true, 
+    loop: false, 
     effect: 'fade', 
-    speed: 800,
+    speed: 700,
         autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
     },
 

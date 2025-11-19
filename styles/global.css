@@ -800,7 +800,7 @@ footer > .wrapper p{
 .leville-footer{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     gap: 10px;
     padding: 0 30px;
 
@@ -810,10 +810,13 @@ footer > .wrapper p{
     padding-left: 0;
 }
 
+
+
 .contato-leville-footer ul{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 20px;
 
 }
 
@@ -830,7 +833,7 @@ footer > .wrapper p{
 }
 
 .contato-footer{
-    padding: 30px;
+    padding: 00px;
 }
 
 .contato-footer{
@@ -844,3 +847,236 @@ footer > .wrapper p{
     text-align: right;
 
 }
+
+
+
+
+
+/*FORM*/
+
+:root {
+    --color-marron: #5a4b41; /* Cor marrom definida */
+    --color-light-bg: #fcf6e8;
+    --color-primary: #fcae39;
+    --color-primary-hover: #e59a2a;
+    --color-border: #b7a79c;
+    --color-focus: #f7ce84;
+    --color-text-dark: #555555;
+}
+
+/* O CSS do usuário, adaptado para o contexto de um form HTML padrão */
+.lb {
+    color: var(--color-marron);
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    /* CF7 usava span.lb, no HTML padrão usaremos <label> com essa classe */
+    font-weight: 400; /* Adicionando weight para melhor legibilidade */
+}
+
+/* Removendo classes específicas do CF7 que não se aplicam mais */
+/* .div.wpcf7, .div.wpcf7 p { ... } */
+
+.wrapper-form {
+    font-family: 'Instrument Sans', sans-serif;
+    background-color: var(--color-light-bg);
+    padding: 30px 20px 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px; /* Adicionando bordas arredondadas (padrão Tailwind) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.head-form {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    /* Margem negativa para encaixar no topo, como no design original */
+    margin: -30px -20px 30px;
+    border-radius: 8px 8px 0 0;
+}
+
+.head-form span {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+
+.head-form h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.body-form label {
+    /* No CF7, o label envolvia o input, aqui vamos usar a tag <label> externa ou adaptar */
+    display: block; /* Garante que a label ocupa a linha toda */
+    color: var(--color-text-dark);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+/* Estilos para o campo de input */
+.body-form input[type="text"],
+.body-form input[type="email"],
+.body-form input[type="tel"] {
+    width: 100%;
+    padding: 8px 20px;
+    border: 2px solid var(--color-border);
+    border-top: none;
+    background-color: transparent !important;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-bottom: 20px; /* Aumentado o espaço entre campos para 20px */
+    border-radius: 4px; /* Adicionando um pequeno arredondamento */
+    color: var(--color-marron) !important;
+}
+
+.body-form input:focus {
+    border-color: var(--color-focus);
+    outline: none;
+    box-shadow: 0 0 5px rgba(247, 206, 132, 0.5);
+}
+
+.body-form input[type="text"]::placeholder,
+.body-form input[type="email"]::placeholder,
+.body-form input[type="tel"]::placeholder {
+    color: var(--color-marron);
+    opacity: 0.6; /* Deixando o placeholder um pouco mais claro */
+}
+
+/* Estilos do Botão de Envio */
+.body-form button[type="submit"] {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.body-form button[type="submit"]:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Estilo para a mensagem de status */
+#form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+}
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+
+
+
+        /* --- ESTILOS DO FORMULÁRIO FOOTER --- */
+
+        .wrapper-form-dark {
+            max-width: 400px;
+            width: 100%; 
+            
+        }
+        
+        .body-form-dark input[type="text"],
+        .body-form-dark input[type="email"],
+        .body-form-dark input[type="tel"],
+        .body-form-dark textarea {
+            width: 100%;
+            padding: 12px 15px;
+            
+            border: none;
+            background-color:#5A5E79;
+            font-size: 13px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            color:#fff;
+        }
+
+        .body-form-dark textarea {
+            resize: vertical;
+        }
+
+        .body-form-dark input:focus,
+        .body-form-dark textarea:focus {
+            border-color: var(--color-laranja); 
+            outline: none;
+        }
+
+        .body-form-dark input::placeholder,
+        .body-form-dark textarea::placeholder {
+            color: var(--color-azul);
+        }
+
+        .body-form-dark .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        .body-form-dark button[type="submit"] {
+            width: auto;
+            background-color: var(--color-laranja);
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .body-form-dark button[type="submit"]:hover {
+            background-color: var(--color-primary-hover);
+        }
+        
+        /* Estilos de Feedback */
+        #form-message-dark {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .loading {
+            background-color: #fff3cd; 
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }

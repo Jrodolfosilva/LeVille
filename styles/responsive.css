@@ -1,5 +1,9 @@
 @media (max-width: 767px) {
 
+    .swiper-button-nav-banner{
+        display: none;
+    }
+    
     .form{
         display: none;
     }
