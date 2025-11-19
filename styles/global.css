@@ -35,6 +35,11 @@
     --color-rosa: #F39992;
     --color-cinza:#F5EEE6;
     --color-marron:#65584F;
+    --color-light-bg: #fcf6e8;
+    --color-border: #b7a79c;
+    --color-focus: #f7ce84;
+    --color-text-dark: #555555;
+    --color-laranja-hover: #e59a2a;
 
     font-family: "Sora", sans-serif;
     scroll-behavior: smooth;
@@ -854,15 +859,7 @@ footer > .wrapper p{
 
 /*FORM*/
 
-:root {
-    --color-marron: #5a4b41; /* Cor marrom definida */
-    --color-light-bg: #fcf6e8;
-    --color-primary: #fcae39;
-    --color-primary-hover: #e59a2a;
-    --color-border: #b7a79c;
-    --color-focus: #f7ce84;
-    --color-text-dark: #555555;
-}
+
 
 /* O CSS do usuário, adaptado para o contexto de um form HTML padrão */
 .lb {
@@ -888,7 +885,7 @@ footer > .wrapper p{
 }
 
 .head-form {
-    background-color: var(--color-primary);
+    background-color: var(--color-laranja);
     color: #ffffff;
     text-align: center;
     padding: 15px 10px;
@@ -955,7 +952,7 @@ footer > .wrapper p{
 /* Estilos do Botão de Envio */
 .body-form button[type="submit"] {
     width: 100%;
-    background-color: var(--color-primary);
+    background-color: var(--color-laranja);
     color: #ffffff;
     font-size: 20px;
     font-weight: 700;
@@ -969,7 +966,7 @@ footer > .wrapper p{
 }
 
 .body-form button[type="submit"]:hover {
-    background-color: var(--color-primary-hover);
+    background-color: var(--color-laranja-hover);
 }
 
 /* Estilo para a mensagem de status */
@@ -1054,7 +1051,7 @@ footer > .wrapper p{
         }
 
         .body-form-dark button[type="submit"]:hover {
-            background-color: var(--color-primary-hover);
+            background-color: var(--color-laranja-hover);
         }
         
         /* Estilos de Feedback */

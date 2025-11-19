@@ -135,7 +135,7 @@ function SwiperHome() {
     effect: 'fade', 
     speed: 700,
         autoplay: {
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
     },
 
