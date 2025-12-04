@@ -162,7 +162,10 @@ a{
 
 
 header{
-    position: relative;
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-cinza);
+    z-index: 99;
 }
 
 .toggle-menu-mobile {
@@ -235,6 +238,7 @@ header{
 
 .blur-banner{
     background-color: #3443643d;
+    padding-top: 130px;
     
 }
 
@@ -246,6 +250,7 @@ header{
     align-items: center;
     min-height: 100vh;
     gap: 60px;
+    
     
 
 }
@@ -559,6 +564,45 @@ header{
 
 
 
+.lista-amenidades {
+    list-style: none; 
+    padding: 0;
+    margin: 0px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+  
+    gap: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+
+
+}
+
+       
+.item-lista {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333;
+    min-width: fit-content;
+    font-size: 12px;
+}
+
+        
+.numero-circulo {
+    width: 20px;
+    height: 2cap;
+    display: block; 
+    background-color: #00479c; 
+    color: white;
+    border-radius: 1000px; 
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 20px; 
+    flex-shrink: 0; 
+}
+
 
 
 
@@ -774,6 +818,61 @@ header{
 
 
 
+
+
+.enderecos-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+   
+   
+}
+
+
+.endereco-item {
+    flex: 1; 
+    padding: 15px;
+    border-left: 3px solid var(--color-laranja); 
+}
+
+.endereco-item ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.endereco-item li {
+    font-size: 1em;
+    line-height: 1.5;
+    display: flex; 
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icon-map, .icon-stand {
+    margin-right: 10px;
+    font-size: 1.2em; 
+    margin-top: 20px;
+    flex-shrink: 0; 
+}
+
+@media (max-width: 768px) {
+    .enderecos-container {
+        flex-direction: column; 
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /*FOOTER*/
 
 footer{
@@ -912,7 +1011,6 @@ footer > .wrapper p{
 }
 
 .body-form label {
-    /* No CF7, o label envolvia o input, aqui vamos usar a tag <label> externa ou adaptar */
     display: block; /* Garante que a label ocupa a linha toda */
     color: var(--color-text-dark);
     font-size: 16px;
