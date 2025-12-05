@@ -40,7 +40,7 @@
     --color-focus: #f7ce84;
     --color-text-dark: #555555;
     --color-laranja-hover: #e59a2a;
-
+    --altura-header:90px;
     font-family: "Sora", sans-serif;
     scroll-behavior: smooth;
   
@@ -51,6 +51,10 @@
     display: block;
     width: 100%;
     height: auto;
+}
+
+.link-ativo{
+    color: var(--color-laranja);
 }
 
 body{
@@ -73,6 +77,10 @@ h1{
 
 }
 
+
+section{
+    scroll-margin-top: var(--altura-header);
+}
 
 
 h2{
