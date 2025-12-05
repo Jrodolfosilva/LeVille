@@ -459,11 +459,11 @@
     background-image: url("/images/banner.webp");
 }
 .fundo-slide-2 {
-    background-image: url('http://127.0.0.1:5500/images/academia.png');
+    background-image: url('/images/academia.png');
 }
 
 .fundo-slide-3 {
-    background-image: url('http://127.0.0.1:5500/images/academia.png');
+    background-image: url('/images/espaco-academia.png');
 }
 
 
