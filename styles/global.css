@@ -60,7 +60,7 @@
 .img-ilustrativa {
     position: absolute;
     bottom: 5px;
-    right: 5px;
+    left: 5px;
     background: rgba(0, 0, 0, 0.55);
     color: white;
     padding: 3px 6px;
