@@ -57,6 +57,19 @@
     color: var(--color-laranja);
 }
 
+.img-ilustrativa {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    opacity: 0.6;
+}
+
 body{
     background-color: var(--color-cinza);
     color: var(--color-marron);
@@ -836,11 +849,13 @@ header{
    
 }
 
+.enderecos-container h3{
+    font-size: 14px;
+}
+
 
 .endereco-item {
     flex: 1; 
-    padding: 15px;
-    border-left: 3px solid var(--color-laranja); 
 }
 
 .endereco-item ul {
